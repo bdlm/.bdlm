@@ -1,0 +1,21 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+# Default screens
+screen -t bash 1
+screen -t bash 2
+screen -t bash 3
+screen -t bash 4
+
+# Scrollback
+defscrollback 20000
+
+# C-a is mine again
+escape ^\\\
+
+# Visual bell
+vbell on
+vbell_msg "   -- !!Ding Ding!! --   "	# default: "Wuff,Wuff!!"
+
+# Autodetach session on hangup instead of terminating screen completely
+autodetach on
